@@ -1,1 +1,0 @@
-* * * * * python /app/scrape.py $BIKES_API_KEY $INFLUX_USER $INFLUX_PASSWORD > /proc/$(cat /var/run/crond.pid)/fd/1 2>&1
