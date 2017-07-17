@@ -20,15 +20,7 @@ services:
     restart: always
     volumes:
       - grafana_data:/var/lib/grafana
-  scraper-bikes:
-    build: scrapers/bikes
-    env_file: configuration.env
-    restart: always
-  scraper-carparks:
-    build: scrapers/carparks
-    env_file: configuration.env
-    restart: always
 
 volumes:
   grafana_data: {}
-  influxdb_data: {}
+  influxdb_data: {} 
